@@ -23,5 +23,10 @@ newline  = putChar '\n'
 
 
 stars ::   Int -> String
-stars n = if n == 0 then [] else '*': stars (n-1)
--- stars n = concat (replicate n '*')
+--stars n = if n == 0 then [] else '*': stars (n-1)
+stars n = concat (replicate n "* ")
+
+putRow :: Int -> Int ->IO()
+putRow row num = do putStr(show row)  -- la fonction show conertit un integer to a string pour l afficher 
+                    putStr " : "
+                    putStrLn (stars num)
