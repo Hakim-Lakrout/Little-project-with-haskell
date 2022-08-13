@@ -1,1 +1,1 @@
-# Hangman_with_Haskell
+# deux en haskell
